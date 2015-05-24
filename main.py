@@ -1,8 +1,7 @@
 import random
 
 def roll():
-    side = random.randrange(1, 6)
-    return side
+    return random.randrange(1, 6)
 
 def startup():
     print("Welcome to Dice Simulator 2015!")
