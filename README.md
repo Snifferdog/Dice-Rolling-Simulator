@@ -1,2 +1,2 @@
 # Dice-Rolling-Simulator
-You can roll a dice!
+You can roll some dice!
