@@ -1,7 +1,6 @@
 import random
 
-def roll():
-    side = random.randrange(1, 6)
+def showdie(side):
     if side == 1:
         print("|---|")
         print("|-1-|")
@@ -26,11 +25,19 @@ def roll():
         print("|---|")
         print("|-6-|")
         print("|---|")
+    print("")
+
+
+def roll(number):
+    side = random.randrange(1, 6)
+    for i in range(0, number):
+        side = random.randrange(1, 6)
+        showdie(side)
 
 def startup():
     print("Welcome to Dice Simulator 2015!")
-    raw_input("Press enter to roll...")
-    roll()
+    numberofdice = input("Number of dice> ")
+    roll(numberofdice)
 
 startup()
 
